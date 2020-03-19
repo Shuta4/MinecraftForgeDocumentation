@@ -1,14 +1,14 @@
 Blocks
 ======
 
-Blocks are, obviously, essential to the Minecraft world. They make up all of the terrain, structures, and machines. Chances are if you are interested in making a mod, then you will want to add some blocks. This page will guide you through the creation of blocks, and some of the things you can do with them.
+Блоки, очевидно, очень важная часть мира Minecraft. Они создают всю местность, все структуры и механизмы. Скорее всего, если вы заинтересованы в создании мода, то вы захотите добавить несколько блоков. Эта страница поможет вам в создании блоков и расскажет о вещах, которые вы можете с ними делать.
 
 Creating a Block
 ----------------
 
 ### Basic Blocks
 
-For simple blocks, which need no special functionality (think cobblestone, wood planks, etc.), a custom class is not necessary. By simply instantiating the `Block` class and calling some of the many setters, one can create many different types of blocks. For instance:
+Для простых блоков, которые не требуют специального функционала (например: cobblestone, wood planks, etc.), отдельный класс не обязателен. By simply instantiating the `Block` class and calling some of the many setters, one can create many different types of blocks. For instance:
 
 - `setHardness` - Controls the time it takes to break the block. It is an arbitrary value. For reference, stone has a hardness of 1.5, and dirt 0.5. If the block should be unbreakable, a convenience method `setBlockUnbreakable` is provided.
 - `setResistance` - Controls the explosion resistance of the block. This is separate from hardness, but `setHardness` will also set the resistance to 5 times the hardness value, if the resistance is any lower than this value.
